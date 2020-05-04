@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<link rel="stylesheet" href="css/styles.css">
+<title>Friends - Angular, SpringBoot and MongoDB: About Us</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNumber01"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="http://www.techactivate.com">TechActivate</a>
+            <div class="collapse navbar-collapse" id="navbarNumber01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item "> <a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item active"> <a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>
+                            About</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="episodes.html"><span
+                                class="fa fa-list fa-lg"></span> Episodes</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="contactus.html"><span
+                                class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                    <span class="fa fa-sign-in"></span> Login</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Friends, Info Center etc.</h1>
+                    <p>We take inspiration from the World's best comedy, and create a unique experience...or whatever!!
+                    </p>
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <img src="assets/images/logo.png" class="img-fluid" width=100 height="100"
+                    data-toggle="tooltip" data-html="true"  title="Or Call us at  <br>+31 - 6 11 33 33 44</br>" data-placement="bootom"
+                    data-placement="bottom" href="#reserveform">
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <ol class="col-12 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">About </li>
+        </li>
+    </ol>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3>About Friends</h3>
+                <hr>
+            </div>
+            <div class="row ">
+                <div class="col-12 ">
+                    <h2>Characters</h2>
+                    <div id="accordian">
+                        <div class="card">
+                            <div class="card=header" role="tab" id="rachel">
+                                <h3 class="mb-0">
+                                    <a data-toggle="collapse" data-target=#rachel>
+                                    Jennifer Aniston <small> as Rachel Green</small></h3>
+                                </a>
+                            </div>
+                            <div class="collapse show" id="rachel" data-parent="#accordian">
+                                <div class="body">
+                                    <div class="card-body">
+                                <p class="d-none d-sm-block">
+                                    A fashion enthusiast and Monica Geller's best friend from childhood. Rachel first moves
+                                    in with
+                                    Monica in season one after nearly marrying Barry Farber. Rachel and Ross Geller are
+                                    later
+                                    involved in an on-again, off-again relationship throughout the series.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div role="tabpanel" class="tab-pane fade" id="monica">
+                            <h3>Courteney Cox <small> as Monica Geller</small></h3>
+                            <p class="d-none d-sm-block">
+                                The mother hen of the group and a chef,[17] known for her perfectionist, bossy,
+                                competitive, and
+                                obsessive-compulsive nature.[18][19] Monica was overweight as a child. She works as a
+                                chef in
+                                various restaurants throughout the show.
+                            </p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="phoebe">
+
+                            <h3>Lisa Kudrow <small>as Phoebe Buffay</small></h3>
+                            <p class="d-none d-sm-block">
+                                A masseuse and self-taught musician. As a child, Phoebe lived in upstate New York with
+                                her
+                                mother, until she committed suicide and Phoebe took to the streets. She writes and sings
+                                her own
+                                strange
+                                songs, accompanying herself on the guitar. She has an identical twin named Ursula, who
+                                shares
+                                Phoebe's traits.
+                            </p>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="joey">
+
+                            <h2>Matt LeBlanc <small>as Joey Tribbiani</small></h2>
+                            <p class="d-none d-sm-block">
+                                A struggling actor and food lover who becomes famous for his role on soap opera Days of
+                                Our
+                                Lives as
+                                Dr. Drake Ramoray. Joey has many short-term girlfriends. Despite his womanizing, Joey is
+                                innocent,
+                                caring, and well-intentioned.
+                            </p>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="Chandler">
+
+                            <h3>Matthew Perry<small> as Chandler Bing</small></h3>
+                            <p class="d-none d-sm-block">
+                                An executive in statistical analysis and data reconfiguration for a large, multinational
+                                corporation. Chandler hates this job, although it pays well. He attempts to quit during
+                                season
+                                one but is
+                                lured back with a new office and a pay raise.
+                            </p>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="ross">
+
+                            <h3>David Schwimmer <small>as Ross Geller</small></h3>
+                            <p class="d-none d-sm-block">
+                                Monica Geller's older brother, a palaeontologist working at the Museum of Natural
+                                History, and
+                                later a tenured professor of palaeontology at the New York University. Ross is involved
+                                in an
+                                on-again, off-again relationship with Rachel throughout the series.
+                            </p>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="gunther">
+
+                            <h3>James Michael Tyler<small> appears as Gunther</small></h3>
+                            <p class="d-none d-sm-block">
+                                A barista at Central Perk in every season of the show, but is only ever credited as a
+                                guest
+                                star.
+                                Gunther, at one point, becomes the manager of the coffee house. It is revealed that
+                                Gunther
+                                speaks Dutch in addition to English.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-12 col-sm-6">
+                <h2>History</h2>
+                <p>
+                    <emp>Friends</emp> debuts - on September 22, 1994, the television sitcom Friends, about six
+                    young
+                    adults living in New York City, debuts on NBC. The show, which featured a group of relatively
+                    unknown actors, went on to become a huge hit and air for 10 seasons
+                </p>
+                <p>You have to watch it to know it!</p>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <h3 class="card-header bg-primary text-white">Facts at a glance</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Started</dt>
+                            <dd class="col-6"> 22 September, 1994</dd>
+                            <dt class="col-6">Location</dt>
+                            <dd class="col-6"> NYC</dd>
+                            <dt class="col-6">Network</dt>
+                            <dd class="col-6"> NBC</dd>
+                            <dt class="col-6">Language</dt>
+                            <dd class="col-6"> English</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="card card-body bg-light>
+                        
+                                <dl class=" row">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">
+                            One of the funniest shows ever on TV - even after 25 years now!
+                        </p>
+                        <footer class="blockquote-footer">
+                            How are you doing! - Joey
+                            <cite title="Source Title"> The man with heart of gold - Joey</cite>
+                        </footer>
+                    </blockquote>
+                    </dl>
+                </div>
+            </div>
+
+
+            <div class="row row-content">
+                <div class="cold-12 col-sm-9">
+                    <h2> Facts &amp; Figures</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>1994</th>
+                                    <th>1995</th>
+                                    <th>1996</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Vieweres (in millions)</th>
+                                    <td>31.3</td>
+                                    <td>52.9</td>
+                                    <td>29.8</td>
+                                </tr>
+                                <tr>
+                                    <th>Season premiere</th>
+                                    <td>September 22, 1994</td>
+                                    <td>September 21, 1995</td>
+                                    <td>September 19, 1996</td>
+                                </tr>
+                                <tr>
+                                    <th>Rank</th>
+                                    <td>8</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <footer class="container">
+
+                <div class="row">
+                    <div class="col-sm">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-sm">
+                        <h5>Our Address</h5>
+                        <address>
+                            100, Main Street<br>
+                            Konnigstraat<br>
+                            Amsterdam / India <br>
+                            <i class="fa fa-phone fa-lg"></i> +31 6 112 223 112<br>
+                            <i class="fa fa-fax fa-lg"></i> +31 6 112 223 112<br>
+                            <i class="fa fa-envelope fa-lg"></i> <a
+                                href="mailto:techactivate2016@gmail.com">TechActivate2016@GMail.Com</a>
+                        </address>
+
+                    </div>
+                    <div class="col-sm align-self-center">
+                        <div class="text-center">
+                            <a class="btn btn-socal-icon bt-google" href="http://google.com/+"><i
+                                    class="fa fa-google-plus fa-lg"></i> Google+</a>
+                            <a class="btn btn-socal-icon bt-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                    class="fa fa-facebook fa-lg"></i> Facebook</a>
+                            <a class="btn btn-socal-icon bt-linkedin" href="http://www.linkedin.com/in/"><i
+                                    class="fa fa-linkedin fa-lg"></i> LinkedIn</a>
+                            <a class="btn btn-socal-icon bt-twitter" href="http://twitter.com/"><i
+                                    class="fa fa-twitter fa-lg"></i> Twitter</a>
+                            <a class="btn btn-socal-icon bt-youtube" href="http://youtube.com/"><i
+                                    class="fa fa-youtube fa-lg"></i> YouTube</a>
+                            <a class="btn btn-socal-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i> Reach us
+                                on
+                                mail</a>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        Cool Logo here!
+                    </div>
+                </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <p>© Copyright 2016 - No-one, litterally no one!</p>
+        </div>
+        </footer>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
